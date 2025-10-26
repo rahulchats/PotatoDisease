@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Potato Disease Classifier</title>
+  <link rel="stylesheet" href="/client/style.css">
+</head>
+<body>
+  <!-- Floating colorful blobs -->
+  <div class="blob blob1"></div>
+  <div class="blob blob2"></div>
+
+  <!-- Futuristic toggle -->
+  <div class="mode-toggle">
+    <label class="switch">
+      <input type="checkbox" id="modeSwitch">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <!-- Glassmorphic 3D Card -->
+  <div class="container">
+    <!-- <h3>Save your Potato Crop.</h3> -->
+    <h3>Predict the disease of your Potato Crop.💊</h3>
+    <div class="upload-section">
+      <label for="imageUpload" class="upload-label">Upload Image</label>
+      <input type="file" id="imageUpload" accept="image/*">
+      <button id="predictBtn">Predict</button>
+    </div>
+
+    <!-- Result & Image Preview -->
+    <div class="result-section" id="result">
+      <h3 id="status"></h3>
+      <p id="class"></p>
+      <p id="confidence"></p>
+      <img id="uploadedImage" src="" alt="Uploaded Preview" style="display:none; max-width:100%; margin-top:10px; border-radius:15px;">
+    </div>
+  </div>
+
+  <script src="/client/script.js"></script>
+</body>
+</html>
